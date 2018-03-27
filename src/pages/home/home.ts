@@ -54,7 +54,11 @@ export class HomePage {
 
     el.appendChild(pacienteTr);
 
-    document.querySelector('#form-adiciona').reset();
+    if (document.querySelector('#form-adiciona')!=null) {
+
+         document.querySelector('#form-adiciona').reset();
+    }
+
 
   }
 
